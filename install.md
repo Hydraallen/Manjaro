@@ -26,6 +26,8 @@
 sudo pacman-mirrors -i -c China -m rank
 ```
 
+choose mirrors
+
 ```
 sudo vi /etc/pacman.conf
 ```
@@ -40,11 +42,24 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 Then
 ```
 sudo pacman -Syyu
-
 sudo pacman -S archlinuxcn-keyring
 ```
 
 If you cannot update, please try uninstall some old packages like `kdeconnect` etc(refer to the error message).
+
+### clash for windows
+`./cfw`
+
+In system settings -> proxy:
+use manually specified proxy configuration
+```
+HTTP Proxy:127.0.0.1
+```
+
+Exceptions: localhost, 127.0.0.0/8, ::1
+
+**Reboot**
+
 
 ### 包管理器
 1. pacman
@@ -55,7 +70,10 @@ If you cannot update, please try uninstall some old packages like `kdeconnect` e
 安装方式
 ```
 sudo pacman -S yay
+yay -S google-chrome
 ```
+
+
 
 
 
