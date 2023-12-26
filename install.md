@@ -60,6 +60,13 @@ Exceptions: localhost, 127.0.0.0/8, ::1
 
 **Reboot**
 
+### bash to zsh
+Check if zsh is installed
+```
+cat /etc/shells
+chsh -s /bin/zsh
+#有可能需要重启
+```
 
 ### 包管理器
 1. pacman
@@ -71,7 +78,10 @@ Exceptions: localhost, 127.0.0.0/8, ::1
 ```
 sudo pacman -S yay
 yay -S google-chrome
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
+
 
 
 
