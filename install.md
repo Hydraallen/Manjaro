@@ -37,6 +37,15 @@ SigLevel = Optional TrustAll
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 ```
 
+Then
+```
+sudo pacman -Syyu
+
+sudo pacman -S archlinuxcn-keyring
+```
+
+If you cannot update, please try uninstall some old packages like `kdeconnect` etc(refer to the error message).
+
 ### 包管理器
 1. pacman
 2. yay
