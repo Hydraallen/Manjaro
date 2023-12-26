@@ -66,7 +66,14 @@ Check if zsh is installed
 cat /etc/shells
 chsh -s /bin/zsh
 #有可能需要重启
+echo $SHELL
 ```
+
+#### Install oh-my-zsh
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+Refer to [zhihu](https://zhuanlan.zhihu.com/p/302883646)
 
 ### 包管理器
 1. pacman
