@@ -106,7 +106,16 @@ yay -S google-chrome
 ssh-keygen -t rsa -C "xxx@xxx.com"
 ```
 
+### software
 
+#### Terminal
+```
+sudo pacman -S kitty
+```
+
+#### Input Method
+> here we use fcitx5+rime
+`fcitx5 fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-chinese-addons fcitx5-material-color fcitx5-rime`
 
 
 
@@ -227,12 +236,6 @@ https://zhuanlan.zhihu.com/p/640577283
 
 
 # Applications recommendation
-## Input Method
-> here we use fcitx5+rime
-fcitx5 fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-chinese-addons fcitx5-material-color fcitx5-rime
-
-## zsh
-zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting
 
 ## VPN
 V2Ray

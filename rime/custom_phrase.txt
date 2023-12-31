@@ -1,0 +1,13 @@
+# 碼表各字段以製表符（Tab）分隔
+# 順序爲：文字+編碼+權重（決定重碼的次序、可選）,用tab键间隔
+
+iOS	ios
+iPhone	iph
+macOS	macos
+Mac	mac
+B站	bzhan
+HarmonyOS	hm	2
+U盘	upan
+up主	upzhu
+神盾  sd
+神盾局特工  sdjtg
