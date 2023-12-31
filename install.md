@@ -73,6 +73,17 @@ echo $SHELL
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
+
+```
+# 语法高亮插件(zsh-syntax-highlighting)
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
+# 自动补全插件(zsh-autosuggestions)
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+# 自动跳转插件(autojump)
+brew install autojump
+```
 Refer to [zhihu](https://zhuanlan.zhihu.com/p/302883646)
 
 ### 包管理器
@@ -88,6 +99,12 @@ yay -S google-chrome
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+**Remember to add the lines shown in terminal to .zshrc**
+
+### Github
+```
+ssh-keygen -t rsa -C "xxx@xxx.com"
+```
 
 
 
