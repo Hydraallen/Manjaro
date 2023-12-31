@@ -117,6 +117,17 @@ sudo pacman -S kitty
 > here we use fcitx5+rime
 `fcitx5 fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-chinese-addons fcitx5-material-color fcitx5-rime`
 
+setup refer to: https://www.cnblogs.com/fatshen/p/14961367.html
+
+rime refer to my [repo](https://github.com/Hydraallen/Manjaro/tree/main/rime)
+
+#### neovim and lunarvim
+
+For lunarvim, refer to my [repo](https://github.com/Hydraallen/lvim)
+
+#### VScode
+
+
 
 
 
