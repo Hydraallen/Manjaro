@@ -127,6 +127,9 @@ For lunarvim, refer to my [repo](https://github.com/Hydraallen/lvim)
 
 #### VScode
 
+```
+yay -S visual-studio-code-bin
+```
 
 
 
@@ -136,8 +139,9 @@ For lunarvim, refer to my [repo](https://github.com/Hydraallen/lvim)
 
 
 
+## Usage
 
-## 系统管理
+### 系统管理
  + 查看系统信息：`lsb_release -a `
  + 查看日志文件： `sudo du -t 100M /var journalctl --disk-usage `
  + 只保留近一周的日志，别的全部删除：`journalctl --vacuum-time=1w`
@@ -156,7 +160,8 @@ For lunarvim, refer to my [repo](https://github.com/Hydraallen/lvim)
 + `systemctl enable --now dhcpcd` 设置服务为开机启动并立即启动这个单元  
 + `systemctl disable dhcpcd` 取消开机自动启动  
 + `systemctl daemon-reload dhcpcd` 重新载入 systemd 配置。扫描新增或变更的服务单元、不会重新加载变更的配置
-## 常用指令
+
+### 常用指令
 `.` 代表当前目录  
 `..` 代表当前目录的上级目录  
 `cp ./a.py ./b.py` 复制命令：将当前路径下的 a.py 复制一份并命名为 b.py。`./` 代表当前文件夹所在路径，以此开头则为相对路径  
@@ -165,14 +170,14 @@ For lunarvim, refer to my [repo](https://github.com/Hydraallen/lvim)
 `rm -rf ./a` 删除整个文件夹  
 `mv a.py b.py` 移动（重命名）命令。将 a.py 更名为 b.py
 
-## Pacman
+### Pacman
 刷新本地镜像源:`sudo pacman -Sy `  
 强制刷新本地镜像源:`pacman -Syy`  
 进行全面系统更新(即通俗意义的“滚”):`sudo pacman -Syu`  
 Pacman 在线安装软件的命令为 `pacman -S 软件包名字` 或者`yay -S 软件包名字`  
 Pacman文件 `/etc/pacman.conf` 
 
-### 安装软件
+#### 安装软件
 安装applemusic+snap：`https://snapcraft.io/install/apple-music-for-linux/arch`
 `sudo pacman -S packagename` ： 安装指定软件  
 `sudo pacman -Sy packagename` ： 刷新数据库后安装指定软件  
@@ -181,20 +186,20 @@ Pacman文件 `/etc/pacman.conf`
 `sudo pacman -U link.tar.xz` ：安装远程包
 `yay -S com.qq.weixin.deepin`：安装微信
 
-### 删除软件
+#### 删除软件
 `sudo pacman -R packagename` ：删除指定软件，保留其全部已经安装的依赖关系
 `sudo pacman -Rs packagename` ：删除指定软件，并删除仅与该软件存在依赖关系的其他软件
 `sudo pacman -Rsc packagename` ：删除指定软件，并删除所有与该软件存在依赖关系的其他软件
 `sudo pacman -Rd packagename` ：删除指定软件，不检查依赖
 
-### 搜索软件
+#### 搜索软件
 `sudo pacman -Q`：显示所有软件  
 `sudo pacman -Ss keyword`：在仓库中搜索含关键字的软件  
 `sudo pacman -Qs keyword`：在已安装软件中搜索含关键词的软件  
 `sudo pacman -Qi packagename`：搜索指定软件的详细信息   
 `sudo pacman -Ql packagename`：列出指定软件的文件 
 
-### 其他命令
+#### 其他命令
 `sudo pacman -Sw packagename`：只下载指定软件而不安装  
 `sudo pacman -Sc` ：清理未安装的软件包  
 `sudo pacman -Scc` ：清理所有的缓存文件  
@@ -203,28 +208,29 @@ Pacman文件 `/etc/pacman.conf`
 显示不再被依赖的包：`sudo pacman -Qdt`  
 查找本机某一软件：`pacman -Qs xxx  `
 
-### 安装微信
+#### 安装微信
 https://blog.csdn.net/weixin_39977764/article/details/125579302
 
-## 键位修改
+### 键位修改
 [参考](https://www.v2ex.com/t/875994)
 ### (X11)键位映射：
 `~/.xmodmap`
 ### GNOME
 [keyd](https://github.com/rvaiya/keyd)
 
-## Clash
+### Clash
 [教程](https://www.youtube.com/watch?v=EYNNTN_IWtU)  
 [教程](https://www.jianshu.com/p/02e3e8ccfe80)
 [设置](https://blog.linioi.com/posts/clash-on-arch/)
 
-## 压缩包
+### 压缩包
 `sudo pacman -S unarchiver`  
 `unar xxx.zip`
 
-## 仿MacOs：
+### 仿MacOs：
 [参考1](https://blog.51cto.com/u_15477117/5927174)  
 [参考2](https://zhuanlan.zhihu.com/p/378627601)
+
 ## 清理缓存
 ### 清理pacman缓存包：
 `sudo pacman -Rns $(pacman -Qtdq) `删除孤立软件包（常用）  
@@ -245,56 +251,6 @@ https://zhuanlan.zhihu.com/p/632567577
 ## i3wm
 https://zhuanlan.zhihu.com/p/640577283
 
-
-# Applications recommendation
-
-## VPN
-V2Ray
-
-## Terminal
-wezterm
-
-## Terminal Applications
-### Necessarities
-git
-vim
-wget
-curl
-
-### Productivity
-neovim
-emacs
-vscode
-
-doomemacs
-lunarvim
-
-### helpful stuffs
-ranger/joshuto
-lazygit
-lazynpm
-autojump
-unar
-youtube-dl
-ccat
-
-### Toys
-neofetch
-
-## Browsers
-Vivaldi (include Email)
-Microsoft Edge/Chrome/Firefox
-
-## packages
-pip
-python
-npm
-node
-cargo
-make 
-git-lfs
-gcc
-g++
 
 ## font
 > emoji
