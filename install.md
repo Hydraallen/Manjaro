@@ -20,6 +20,11 @@
 [教程](https://zhuanlan.zhihu.com/p/376787855)
 [系统配置](https://zhuanlan.zhihu.com/p/114296129)
 [安装软件](https://www.cnblogs.com/xiaoyao404/p/16490685.html)
+时间设置
+run this in terminal of windows:
+```bash
+Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+```
 
 ### 配置镜像源
 ```shell
